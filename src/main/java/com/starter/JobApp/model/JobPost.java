@@ -1,8 +1,6 @@
 package com.starter.JobApp.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -19,4 +17,7 @@ public class JobPost {
     private String postDesc ;
     private int reqExperience ;
     private List<String> postTechStack ;
+
+
+
 }

@@ -1,10 +1,11 @@
-package com.starter.JobApp;
+package com.starter.JobApp.controller;
 
 import com.starter.JobApp.model.JobPost;
 import com.starter.JobApp.service.JobService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -18,8 +19,15 @@ public class JobRestController {
 
 
     @GetMapping("jobPosts")
-    private List<JobPost> getAllJobs()
+    public List<JobPost> getAllJobs()
     {
         return service.getAllJobs();
+    }
+
+    @GetMapping("jobPost/{postId}")
+    public JobPost getJob(@PathVariable("postId") int postId)
+    {
+        return service.getJob(postId);
+
     }
 }

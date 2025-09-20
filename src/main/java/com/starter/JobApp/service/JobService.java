@@ -16,7 +16,7 @@ public class JobService {
 
     public void addJob( JobPost jobPost)
     {
-        repo.addJob(jobPost);
+        repo.addJobPost(jobPost);
     }
 
     public List<JobPost> getAllJobs()
@@ -24,4 +24,10 @@ public class JobService {
         return repo.getAllJobs() ;
     }
 
+
+
+    public JobPost getJob(int postId) {
+
+        return repo.getJob(postId);
+    }
 }
