@@ -1,6 +1,29 @@
 # Job Application REST API
 
-Bu proje, basit bir iş ilanı yönetimini sağlayan RESTful API'ler sunar. Bu API'ler ile iş ilanları üzerinde temel **CRUD** (Create, Read, Update, Delete) operasyonları gerçekleştirebilirsiniz.
+Bu proje, iş ilanları yönetimi için geliştirilmiş bir Spring Boot REST API uygulamasıdır.
+Frontend tarafı ile (React.js) entegre çalışarak iş ilanı ekleme, güncelleme, silme ve listeleme işlemlerini sağlar. Bu API'ler ile iş ilanları üzerinde temel **CRUD** (Create, Read, Update, Delete) operasyonları gerçekleştirebilirsiniz.
+
+🛠 Kullanılan Teknolojiler
+
+Java 17+
+
+Spring Boot
+
+Spring Web
+
+Spring Data JPA
+
+Hibernate
+
+PostgreSQL Driver
+
+Spring DevTools
+
+Lombok
+
+Maven
+
+RESTful API yapısı
 
 ---
 
