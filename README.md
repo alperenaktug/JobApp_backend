@@ -11,6 +11,8 @@ Spring Boot
 
 Spring Web
 
+Spring Security
+
 Spring Data JPA
 
 Hibernate
